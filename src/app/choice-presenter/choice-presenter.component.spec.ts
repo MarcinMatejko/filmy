@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BajkaPage } from './bajka.page';
+import { ChoicePresenterComponent } from './choice-presenter.component';
 
-describe('BajkaPage', () => {
-  let component: BajkaPage;
-  let fixture: ComponentFixture<BajkaPage>;
+describe('ChoicePresenterComponent', () => {
+  let component: ChoicePresenterComponent;
+  let fixture: ComponentFixture<ChoicePresenterComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BajkaPage ],
+      declarations: [ ChoicePresenterComponent ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BajkaPage);
+    fixture = TestBed.createComponent(ChoicePresenterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

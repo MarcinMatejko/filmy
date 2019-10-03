@@ -1,25 +1,28 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import {OptionSelectorPage} from './option-selector/option-selector.page';
+import {IonicModule} from '@ionic/angular';
+import {KoniecPage} from './koniec/koniec.page';
+import {CommonModule} from '@angular/common';
+import {ChoicePresenterComponent} from './choice-presenter/choice-presenter.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
-  { path: 'serial', loadChildren: './home/serial/serial.module#SerialPageModule' },
-  { path: 'bajka', loadChildren: './home/bajka/bajka.module#BajkaPageModule' },
-  { path: 'film', loadChildren: './home/film/film.module#FilmPageModule' },
-  { path: 'dokument', loadChildren: './home/dokument/dokument.module#DokumentPageModule' },
-  { path: 'komedia', loadChildren: './home/film/komedia/komedia.module#KomediaPageModule' },
-  { path: 'thriller', loadChildren: './home/film/thriller/thriller.module#ThrillerPageModule' },
-  { path: 'horror', loadChildren: './home/film/horror/horror.module#HorrorPageModule' },
-  { path: 'romantyczna', loadChildren: './home/film/komedia/romantyczna/romantyczna.module#RomantycznaPageModule' },
-  { path: 'akcja', loadChildren: './home/film/akcja/akcja.module#AkcjaPageModule' },
-  { path: 'koniec', loadChildren: './koniec/koniec.module#KoniecPageModule' },
+  { path: '', redirectTo: 'selector/home', pathMatch: 'full' },
+  { path: 'selector/koniec', component: KoniecPage },
+  { path: 'selector/:id', component: OptionSelectorPage }
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, {preloadingStrategy: PreloadAllModules}),
+    IonicModule,
+    CommonModule
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  declarations: [
+      ChoicePresenterComponent,
+      KoniecPage,
+      OptionSelectorPage
+  ]
 })
 export class AppRoutingModule { }

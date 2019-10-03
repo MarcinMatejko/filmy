@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>
+            Co obejrzeć
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+    <ion-grid>
+        <ion-row *ngFor="let row of [0,1]">
+            <ion-col *ngFor="let col of [0,1]" size-sm="4" [offsetSm]="col + 1">
+                <app-choice-presenter [choice]="getChoice(row * 2 + col)"></app-choice-presenter>
+            </ion-col>
+        </ion-row>
+
+        <ion-button routerLink="selector/koniec" class="show-more-btn" size="large" color="primary">Wybierz losowy
+            <ion-icon name="arrow-round-forward"></ion-icon>
+        </ion-button>
+
+    </ion-grid>
+</ion-content>

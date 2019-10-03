@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DokumentPage } from './dokument.page';
+import { OptionSelectorPage } from './option-selector.page';
 
-describe('DokumentPage', () => {
-  let component: DokumentPage;
-  let fixture: ComponentFixture<DokumentPage>;
+describe('OptionSelectorComponent', () => {
+  let component: OptionSelectorPage;
+  let fixture: ComponentFixture<OptionSelectorPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DokumentPage ],
+      declarations: [ OptionSelectorPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DokumentPage);
+    fixture = TestBed.createComponent(OptionSelectorPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
