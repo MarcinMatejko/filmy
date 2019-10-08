@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { choices} from '../option-selector/option-selector.page';
 import { Choice } from '../models/Choice';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-choice-presenter',
@@ -12,7 +12,7 @@ export class ChoicePresenterComponent implements OnInit {
   @Input()
   choice: Choice;
 
-  constructor() { }
+  constructor(choiceService: DataService) { }
 
   ngOnInit() {}
 
