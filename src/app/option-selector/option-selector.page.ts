@@ -1,14 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 
-export interface Choice {
-    name: string;
-    id?: string;
-    color: string;
-}
+import { Choice } from '../models/Choice';
+
 
 export const choices: { [key: string]: Choice[] } = {
     home: [
-        {
+        { 
             name: 'bajka',
             color: 'dark'
         }, {

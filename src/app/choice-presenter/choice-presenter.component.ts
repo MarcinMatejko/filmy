@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Choice, choices} from '../option-selector/option-selector.page';
+import { choices} from '../option-selector/option-selector.page';
+import { Choice } from '../models/Choice';
 
 @Component({
   selector: 'app-choice-presenter',
