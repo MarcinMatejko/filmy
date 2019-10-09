@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import { Choice } from '../models/Choice';
+import { choices } from '../services/data.service';
 import { DataService } from '../services/data.service';
 
 @Component({
