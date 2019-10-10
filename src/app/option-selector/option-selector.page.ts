@@ -14,7 +14,7 @@ export class OptionSelectorPage implements OnInit {
     private readonly selections: Choice[];
 
     constructor(userChoice: DataService) {
-        this.selections = userChoice.choices;
+        this.selections = userChoice.choices.home;
     }
 
     ngOnInit() {

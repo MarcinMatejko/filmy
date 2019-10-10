@@ -1,6 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
 import { Choice } from '../models/Choice';
-import { choices } from '../services/data.service';
 import { DataService } from '../services/data.service';
 
 @Component({
@@ -13,7 +12,7 @@ export class ChoicePresenterComponent implements OnInit {
   @Input()
   choice: Choice;
 
-  constructor(choiceService: DataService) { }
+  constructor(private choiceService: DataService) { }
 
   ngOnInit() {}
 
@@ -22,6 +21,6 @@ export class ChoicePresenterComponent implements OnInit {
   }
 
   hasChoices(): boolean {
-    return choices[this.choice.id || this.choice.name] !== undefined;
+    return this.choiceService.choices[this.choice.id || this.choice.name] !== undefined;
   }
 }

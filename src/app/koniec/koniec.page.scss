@@ -1,13 +1,17 @@
-ion-card {
-  height: 70vh;
-  background: yellow;
+.plakat {
+  display: grid;
+  justify-items: center;
+}
+// h1, h2 {
+//   margin-top: 0;
+// }
+
+.zdjecie {
+  width: 70%;
 }
 
-.plakat {
-  width: 75vw;
-  height: 30vh;
-  background-color: green;
-  color: blue;
-  display: grid;
-  justify-content: center;
+@media (min-width: 700px) {
+  .zdjecie {
+    width: 300px;
+  }
 }

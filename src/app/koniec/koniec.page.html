@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons slot="start">
         <ion-back-button defaultHref="/home"></ion-back-button>
       </ion-buttons>
@@ -8,34 +8,28 @@
 </ion-header>
 
 <ion-content>
-  <ion-card>
     <ion-grid>
-      <ion-row>
-        <ion-col>
-          <div class="ion-text-center">
-            Film na dziś:
-          </div>
+      <ion-row class="ion-text-center">
+        <ion-col class="ion-no-padding">
+            <h1>Film na dziś:</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-text-center">
+        <ion-col class="ion-no-padding">
+            <h2>Jakiś ciekawy tytuł fajnego filmu</h2>
         </ion-col>
       </ion-row>
       <ion-row>
-        <ion-col>
-          <div class="ion-text-center">
-            Jakiś ciekawy tytuł fajnego
-          </div>
+        <ion-col class="plakat">
+          <img class="zdjecie" src="https://i.pinimg.com/originals/25/0b/8a/250b8ad47d92ba9d7d6ffeaee380afed.jpg" alt="">
         </ion-col>
       </ion-row>
-      <ion-row>
+      <ion-row class="ion-text-center">
         <ion-col>
-          <div class="plakat"></div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <ion-button>Pokaż inny</ion-button>
+          <ion-button size="large" color="success">Pokaż inny</ion-button>
         </ion-col>
         <ion-col>
-          <ion-button>Zacznij od nowa</ion-button></ion-col>
+          <ion-button size="large" color="warning">Zacznij od nowa</ion-button></ion-col>
       </ion-row>
     </ion-grid>
-  </ion-card>
 </ion-content>
