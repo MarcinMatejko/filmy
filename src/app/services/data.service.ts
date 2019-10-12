@@ -41,19 +41,19 @@ export class DataService {
   dokument: [
     {
       name: 'Przyrodniczy',
-      id: 'przyroda',
+      // id: 'przyroda',
       color: 'dark'
     }, {
       name: 'Historyczny',
-      id: 'historia',
+      // id: 'historia',
       color: 'tertiary'
     }, {
       name: 'Naukowy',
-      id: 'nauka',
+      // id: 'nauka',
       color: 'success'
     }, {
       name: 'Teorie Spiskowe',
-      id: 'teoria',
+      // id: 'teoria',
       color: 'danger'
     }],
   film: [
@@ -90,6 +90,78 @@ export class DataService {
     }, {
       name: 'Dramat',
       id: 'dramat',
+      color: 'danger'
+    }],
+  komedia: [
+    {
+      name: 'Romantyczna',
+      id: 'romantyczna',
+      color: 'dark'
+    }, {
+      name: 'Akcja',
+      id: 'komAkcja',
+      color: 'tertiary'
+    }, {
+      name: 'Dramat',
+      id: 'dramat',
+      color: 'success'
+    }, {
+      name: 'Fantasy',
+      id: 'fantasy',
+      color: 'danger'
+    }],
+  thriller: [
+    {
+      name: 'Psychologiczny',
+      id: 'psychologiczny',
+      color: 'dark'
+    }, {
+      name: 'Kryminał',
+      id: 'kryminal',
+      color: 'tertiary'
+    }, {
+      name: 'Sci-Fi',
+      id: 'sci-fi',
+      color: 'success'
+    }, {
+      name: 'Akcja',
+      id: 'thrillerAkcja',
+      color: 'danger'
+    }],
+  Akcja: [
+    {
+      name: 'Strzelanina',
+      id: 'strzelanina',
+      color: 'dark'
+    }, {
+      name: 'Samochody',
+      id: 'samochody',
+      color: 'tertiary'
+    }, {
+      name: 'Sci-Fi',
+      id: 'AkcjaSciFi',
+      color: 'success'
+    }, {
+      name: 'Bijatyka',
+      id: 'bijatyka',
+      color: 'danger'
+    }],
+  Horror: [
+    {
+      name: 'Straszny',
+      id: 'straszny',
+      color: 'dark'
+    }, {
+      name: 'Krwawy',
+      id: 'krwawy',
+      color: 'tertiary'
+    }, {
+      name: 'Na faktach',
+      id: 'horrorNaFaktach',
+      color: 'success'
+    }, {
+      name: 'Parodia',
+      id: 'parodia',
       color: 'danger'
     }],
       
