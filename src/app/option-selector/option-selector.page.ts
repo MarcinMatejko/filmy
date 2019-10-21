@@ -4,6 +4,7 @@ import { Choice } from '../models/Choice';
 import { DataService } from '../services/data.service';
 
 
+
 @Component({
     selector: 'app-option-selector',
     templateUrl: './option-selector.component.html',
@@ -12,14 +13,18 @@ import { DataService } from '../services/data.service';
 export class OptionSelectorPage implements OnInit {
 
     private readonly selections: Choice[];
+    subscribedParam = "initial value";
 
-    constructor(userChoice: DataService) {
-        this.selections = userChoice.choices.home;
-    }
+    constructor(
+        userChoice: DataService) {
+            this.selections = userChoice.choices.home;
+        }
 
     ngOnInit() {
+
     }
 
+   
     getChoice(index: number): Choice {
         return this.selections[index];
     }

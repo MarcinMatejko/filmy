@@ -9,18 +9,22 @@ export class DataService {
   home: [
     { 
         name: 'bajka',
+        id: 'bajkaBajka',
         color: 'dark'
     }, {
         name: 'dokument',
+        id: 'dokument',
         color: 'tertiary'
     }, {
         name: 'film',
+        id: 'filmFilm',
         color: 'success'
     }, {
         name: 'serial',
+        id: 'serialSerial',
         color: 'danger'
     }],
-  bajka: [
+  bajkaBajka: [
     {
         name: 'Na poważnie',
         id: 'powaga',

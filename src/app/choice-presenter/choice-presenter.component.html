@@ -3,6 +3,7 @@
             expand="block"
             fill="solid"
             size="large"
-            [color]="choice.color">
+            [color]="choice.color"
+            (click)="onSelect[choice.name]">
   {{choice.name}}
 </ion-button>

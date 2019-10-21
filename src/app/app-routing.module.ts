@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'selector/home', pathMatch: 'full' },
   { path: 'selector/koniec', component: KoniecPage },
   { path: 'selector/:id', component: OptionSelectorPage }
+
 ];
 
 @NgModule({
